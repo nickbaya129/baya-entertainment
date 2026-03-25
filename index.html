@@ -33,6 +33,7 @@
       }
 
       .hero {
+        position: relative;
         padding: 120px 0 100px;
         background:
           radial-gradient(circle at top, rgba(198,161,91,0.18), transparent 34%),
@@ -44,8 +45,17 @@
         color: #c6a15b;
         text-transform: uppercase;
         letter-spacing: 0.4em;
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 24px;
+      }
+
+      .top-right-logo {
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        height: 64px;
+        width: auto;
+        z-index: 10;
       }
 
       h1, h2, h3 {
@@ -276,11 +286,18 @@
         .hero-sub {
           font-size: 20px;
         }
+
+        .top-right-logo {
+          top: 20px;
+          right: 20px;
+          height: 42px;
+        }
       }
     </style>
   </head>
   <body>
     <section class="hero">
+      <img src="/baya-logo.png" alt="Baya Entertainment logo" class="top-right-logo">
       <div class="container">
         <div class="eyebrow">BAYA Entertainment</div>
         <h1>Designing how events look, sound, and feel</h1>
